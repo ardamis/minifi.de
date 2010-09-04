@@ -1,0 +1,42 @@
+done - Count the characters in the long url (for amusment) .length
+rejected, inefficient - Check for existence of link before assigning new short url
+Count the number of times a short url is accessed
+done, needs improvement - Record the datetime of creation
+done - Record the IP address of the creator
+Reverse lookup - retrieve the original long URL but do not redirect to it
+done - Reject any URLs with illegal characters, such as <, >, ", ', etc...
+done - Add the http:// protocol specifier if it or https:// does not exist
+send http status of 301 for redirects? rather than 302?
+alternative style for mobile devices
+admin page that shows the last 50? urls created
+
+done - check for validity of original url
+limit original urls to x characters (is.gd uses 2,000)
+
+Account-based:
+	list urls submitted
+	popularity
+
+urls expire? will have to let visitors know it has expired
+
+limit url creations to 1000 per day per ip address
+blacklist certain urls
+
+-----
+
+http://www.hotscripts.com/category/php/scripts-programs/redirection/url-based/
+
+http://michaelkimsal.com/blog/help-test-a-new-url-shortening-redirection-service/
+http://ewerl.com/
+
+http://is.gd/api_info.php
+
+
+------------
+
+	// Save all the potential characters to an array
+	$chars = array();
+	$chars = array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z);
+
+
+

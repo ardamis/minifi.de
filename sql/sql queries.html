@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS urls;
+
+CREATE TABLE urls (
+  id MEDIUMINT NOT NULL AUTO_INCREMENT,
+  shortcode VARCHAR(15),
+  longurl TEXT,
+  created DATETIME,
+  ip INT UNSIGNED,
+  requests SMALLINT UNSIGNED,
+  PRIMARY KEY (id)
+);
+
+DROP TABLE IF EXISTS ip_blacklist;
+
+CREATE TABLE ip_blacklist (
+  ip INT UNSIGNED,
+  PRIMARY KEY (ip)
+);

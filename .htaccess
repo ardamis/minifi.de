@@ -1,0 +1,14 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteOptions MaxRedirects=2
+
+RewriteCond %{HTTP_HOST} !^minifi\.de$
+RewriteRule (.*) http://minifi.de/$1 [R=301,L]
+
+# Send any requests for .php pages to the appropriate page
+RewriteCond %{REQUEST_URI} \.php
+RewriteRule ^/(.*)\.php /$1.php [NC,L]
+
+# Send any URI that does not contain a dot (.) to the url rewriter
+RewriteCond %{REQUEST_URI} !\.
+RewriteRule ^([0-9A-Za-z]{1,5})$ /api.php?url=$1 [NC,L]

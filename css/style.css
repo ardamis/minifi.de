@@ -1,0 +1,162 @@
+/* -----------------------------------------------------------------------
+
+   Blueprint CSS Framework 0.7.1
+   http://blueprintcss.googlecode.com
+
+   * Copyright (c) 2007-2008. See LICENSE for more info.
+   * See README for instructions on how to use Blueprint.
+   * For credits and origins, see AUTHORS.
+   * This is a compressed file. See the sources in the 'src' directory.
+   
+   Which itself owes a lot to Eric Meyer's reset.css
+   http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+
+----------------------------------------------------------------------- */
+
+/* reset.css */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a {margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;}
+body {line-height:1.5;}
+/* remember to define focus styles! */
+:focus {outline: 0;}
+a img {border:none;}
+
+/* typography.css */
+body {font-size:75%;color:#222;background:#fff;font-family:Verdana, Arial, sans-serif;}
+h1, h2 {font-weight:normal;color:#111;}
+h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
+h2 {font-size:2em;margin-bottom:0.75em;}
+p {margin:0 0 1.5em;line-height:1.4em;}
+p img {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
+p img.right {float:right;margin:1.5em 0 1.5em 1.5em;}
+a:focus, a:hover {color:#000;}
+a {color:#009;text-decoration:underline;}
+
+/* forms.css */
+label {font-weight:bold;}
+input.text, input.title, textarea, select {}
+input.text:focus, input.title:focus, textarea:focus, select:focus {}
+input.text, input.title {width:300px;padding:5px;}
+input.title {font-size:1.5em;}
+
+/* -------------------------------------------------------------- 
+
+	Clearing floats without extra markup
+	Based on How To Clear Floats Without Structural Markup by PiE
+	[http://www.positioniseverything.net/easyclearing.html] 
+	
+-------------------------------------------------------------- */
+
+.clearfix:after, .container:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.clearfix, .container {display: inline-block;}
+* html .clearfix,
+* html .container {height: 1%;}
+.clearfix, .container {display: block;}
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+
+.clear {clear:both;}
+
+
+/* -------------------------------------------------------------- 
+   
+   Begin site-specific styles
+      
+-------------------------------------------------------------- */
+
+body {
+	background: #FFFFFF;
+	color: #333333;
+}
+a {
+	color: #333333;
+}
+.container {
+	width: 600px;
+	margin: 120px auto 0;
+	font: 1.0em Verdana, Arial, sans-serif;
+}
+.header {
+}
+ul.nav {
+	list-style-type: none;
+}
+ul.nav li {
+}
+.content {
+}
+h1 {
+	margin: 0 0 1.0em;
+}
+h1 a {
+	text-decoration: none;
+}
+h2 {
+	font-size: 1.4em;
+	font-weight: normal;
+	margin: 1.5em 0 1.5em;
+}
+h3 {
+	font-weight: bold;
+	margin: 1.5em 0 0.5em;
+}
+input {
+	margin: 0 0 6px;
+	font-size: 1.2em;
+	line-height: 1.0em;
+	padding: 2px 4px 4px;
+	font: 12px Verdana, Arial, sans-serif;
+/*
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+*/
+}
+#url {
+	width: 590px;
+}
+#submit {
+	color: #062D56;
+	cursor: pointer;
+	padding: 2px 8px 4px;
+}
+textarea {
+	width: 590px;
+	height: 20px;
+	padding: 2px 4px 4px;
+	font: 12px Verdana, Arial, sans-serif;
+}
+#minifierform textarea {
+	border: 0px;
+	overflow: hidden;
+}
+#feedbackform textarea {
+	height: 60px;
+}
+label {
+	display: block;
+}
+p#length {
+	float: right;
+}
+pre {
+	margin: 0 0 1.5em;
+}
+.footer {
+	padding: 60px 0 0;
+	text-align: right;
+}
+.footer p {
+	margin: 0 0 0.5em;
+}
+.footer a {
+	text-decoration: none;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
